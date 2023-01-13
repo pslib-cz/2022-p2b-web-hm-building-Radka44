@@ -1,0 +1,1 @@
+odkaz na [moji stránku]()
