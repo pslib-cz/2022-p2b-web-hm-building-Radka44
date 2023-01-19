@@ -1,1 +1,1 @@
-odkaz na [moji stránku](https://pslib-cz.github.io/2022-p2b-web-hm-building-Radka44/)
+odkaz na [moji stránku](https://github.com/pslib-cz/2022-p2b-web-hm-building-Radka44/blob/main/media/index.html)
