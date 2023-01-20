@@ -1,3 +1,38 @@
+  :root {
+    --offset: 20px;
+    --color-text: #3a3a3a;
+    --color-text-gray: #888;
+    --color-background: #fff;
+    --color-primary: #eb6c27;
+    --font-size-default: 2rem;
+    --fw-thin: 100;
+    --fw-extralight: 200;
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    --fw-black: 900;
+    --transition: all 250ms ease-in-out;
+    --border-radius: 1em;
+    --box-shadow-bottom: 0 10px 10px -5px rgba(0,0,0,0.25);
+}
+
 .background-image {
-    background-image: url(pageheader-1920w.jpg);
-  }
+  background-image: url(pageheader-1920w.jpg);
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+::before, ::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
