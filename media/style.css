@@ -47,5 +47,22 @@
 }
 
 
+.novostavby > h3{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
 
+.prumyslove-stavby{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
 
+.domy-a-jiné-stavby{
+  
+}
