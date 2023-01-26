@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>HM Building.cz sro - SLUŽBY</title>
+</head>
+<body>
+    <div class="page-header-box">            
+        <div class="menu-main">
+            <div class="page-logo">
+                <a href="index.html">
+                    <img src="../logo.png" alt="HM Building.cz" width="200" height="55.17">
+                </a>
+            </div>
+            <nav class="menu-list">
+                <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="../html/sluzby.html">Služby</a></li>
+                    <li><a href="../html/reference.html">Reference</a></li>
+                    <li><a href="../html/onas.html">O nás</a></li>
+                    <li><a href="../html/kontakt.html">Kontakt</a></li>
+                </menu>
+            </nav>
+
+            <script>
+                const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+                for (const btn of hamburgerButtons) {
+                    btn.onclick = (event) => {
+                        const menus = document.querySelectorAll(".hamburger-menu-list");
+                        for (const menu of menus) {
+                            menu.classList.toggle("navbar__menu--hidden");
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+
+          <div class="sluzby-popis">
+            <h1>Rekonstrukce domů</h1>
+            <p>Provádíme vešketré práce spojené s rekonstrukcí stávajících objektů</p>
+            <p><b>Dodatečné izolování objektů</b></p>
+                <ul>
+                    <li>zemní práce</li>
+                    <li>základové konstrukce</li>
+                </ul>
+            <p><b>Zateplení objektů</b></p>
+                <ul>
+                    <li>zateplení fasád</li>
+                    <li>výměna oken a otvorových výplní</li>
+                </ul>
+            <p><b>Změna vnitřních i vnějších dispozic stávajících objektů</b></p>
+                <ul>    
+                    <li>bourací práce</li>
+                    <li>zednické práce</li>
+                    <li>sádrokartonské práce</li>
+                </ul>
+            <p><b>Demolice stávajících objektů</b></p>
+                <ul>
+                    <li>bourací a demoliční práce</li>
+                    <li>odizolování konstrukcí pod/nad úrovní terénu</li>
+                    <li>zateplení objektů</li>
+                    <li>úprava vnitřních dispozic</li>
+                    <li>výměna otvorových výplní</li>
+                </ul>
+          </div>
+          <div class="spodni-cast">
+            <h2>Plácneme si pro Váš projekt?</h2>
+            <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+            <div  class="bottom-button">
+                <a href="./media/html/kontakt.html">Nezávazně poptat</a>
+            </div>
+        </div>
+</body>
+</html>

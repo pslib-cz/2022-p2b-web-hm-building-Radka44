@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./media/onas.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <title>HM Building.cz sro - O NÁS</title>
 </head>
 <body>
-    <main>
-        <nav>
-            <a href="./index.html">DOMŮ</a>
-            <a href="./media/sluzby.html">SLUŽBY</a>
-            <a href="./media/reference.html">REFERENCE</a>
-            <a href="./media/onas.html">O NÁS</a>
-            <a href="./media/kontakt.html">KONTAKT</a>
-        </nav>
+    <div class="page-header-box">            
+        <div class="menu-main">
+            <div class="page-logo">
+                <a href="index.html">
+                    <img src="../logo.png" alt="HM Building.cz" width="200" height="55.17">
+                </a>
+            </div>
+            <nav class="menu-list">
+                <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="../html/sluzby.html">Služby</a></li>
+                    <li><a href="../html/reference.html">Reference</a></li>
+                    <li><a href="../html/onas.html">O nás</a></li>
+                    <li><a href="../html/kontakt.html">Kontakt</a></li>
+                </menu>
+            </nav>
+
+            <script>
+                const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+                for (const btn of hamburgerButtons) {
+                    btn.onclick = (event) => {
+                        const menus = document.querySelectorAll(".hamburger-menu-list");
+                        for (const menu of menus) {
+                            menu.classList.toggle("navbar__menu--hidden");
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
           
         <div class="onas">
             <h1>O nás</h1>
@@ -36,12 +59,13 @@
                     <br>                    
                     <b>Záruční doba</b> na námi provedená díla se pohybuje od 24 do 60 měsíců.</p>
         </div>
-    </main>
 
         <div class="spodni-cast">
-            <h1>Plácneme si pro Váš projekt?</h1>
+            <h2>Plácneme si pro Váš projekt?</h2>
             <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-            <a href="kontakt.html" class="my-button">Nezávazně poptat</a>
+            <div  class="bottom-button">
+                <a href="./media/html/kontakt.html">Nezávazně poptat</a>
+            </div>
         </div>
     </body>
 </html>
