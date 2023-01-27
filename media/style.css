@@ -36,6 +36,33 @@
     justify-content: space-between;
   }
 
+  .navbar__menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: #eb6c27;
+  }
+
+  .navbar__menu::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    margin-right: calc(46px - 25px- (46px - 25px / 2));
+    transform: translateY(-100%);
+    border: 12.5px solid white;
+    border-bottom-color: #eb6c27;
+    border-bottom-style: solid;
+    border-bottom-width: 25px;
+    border-top: none;
+  }
+
   .page-content{
     background-image: url(./pageheader-1920w.jpg);
     background-size: cover;
@@ -61,13 +88,36 @@
     justify-content: end; 
   }
   
+  /*
+  .hamburger{
+    display: flex;
+  }
+  
+  @media screen and (max-width: 768px){
+      .header{
+    background-color: white;
+  }  
+    .menu{
+      display: block;   
+    }
+
+    .navbar__menu--hidden{
+      z-index: -1;
+    }
+  }
+
+  .hamburger::after{
+        content: url(../media/hamburger.svg);
+  }
+  
+  */
 
   .navbar-btn{
     display: none;
   }
 
   .btn--primary {
-    background-color: var(--color-primary);
+    background-color: #eb6c27;
     padding: 16px 50px;
     height: 41px;
     width: 173px;
@@ -334,13 +384,6 @@
     text-decoration: underline;
   }  
 }
-
-
-
-
-
-
-
 
 
 
