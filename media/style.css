@@ -611,8 +611,17 @@
     position: absolute;
   }
 
+  li::marker{
+    color: #eb6c27;
+  }
 
+  .sluzby-popis{
+    margin: 206px;
+  }
 
+  .sluzby-popis > h2{
+    text-align: center;
+  }
 
 
 
