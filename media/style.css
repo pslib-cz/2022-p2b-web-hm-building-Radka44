@@ -25,13 +25,34 @@
   .navbar__menu--hidden {
       display: none;
   }
+
+  /* hamburger menu */
+.hamburger-menu {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.75em;
+}
+
+.hamburger-menu::after {
+  content: url(./hamburger.svg);
+} 
+
   
+  html {
+    font-family: 'OpenSans', sans-serif;;
+    line-height: 1.15;
+  }
+
   img{
     max-width: 320px;
   }
 
   .menu-main{
-    display: flex;
+    /*display: flex;*/
     flex-direction: row;
     justify-content: space-between;
   }
@@ -141,9 +162,9 @@
     font-weight: bold;
   }
   
-  .Služby{
+  .Sluzby{
     margin: 21px;
-    width: 320px;
+    /*width: 320px;*/
   }
 
   .sluzby-popis{
@@ -163,12 +184,24 @@
   }
 
   .my-button{
-    border: 2px dashed #eb6c27;
+    /*border: 2px dashed #eb6c27;
     width: 170px;
     height: 41px;
     text-align: center;
     padding: 12px 40px;
-    gap: 10px;
+    gap: 10px;*/
+
+    color: var(--color-primary);
+    padding: 12px 40px 12px 40px;
+    font-size: 14px;
+    border-radius: 2px;
+    border-style: dashed;
+    text-decoration-line: none;
+    margin-bottom: 40px;
+  }
+  
+  a {
+    background-color: transparent;
   }
 
   .my-button > a{
@@ -188,8 +221,8 @@
   }
 
   .reference-hl-str{
-    margin: 20px;
-
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .ref{
@@ -240,113 +273,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* hamburger menu */
-.hamburger-menu {
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 0.75em;
+/*TABLET*/
+@media (min-width: 780px) and (max-width:1400px) {
+  .navbar__hamburger{
+    display: none;
+  }
 }
-
-.hamburger-menu::after {
-  content: url(./hamburger.svg);
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -368,9 +300,26 @@
     display: none;
   }
 
+  .page-title{
+    font-weight: 800;
+    font-size: 120px;
+  }
+
+  .hero-title{
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  h2{
+    font-weight: 700;
+    font-size: 30px;
+  }
+
   .btn--primary {
     background-color: var(--color-primary);
     padding: 16px 50px;
+    color: aliceblue;
    }
   
   .btn {
@@ -378,12 +327,22 @@
     display: inline-flex;
     margin: 73px;
   }
+
+  .navbar-btn::after{
+    content: url(./arrow.svg);
+    margin-left: 1em;
+  }
   
   a {
     color: rgb(0, 0, 0);
     text-decoration: underline;
   }  
 
+  .figma-h2{
+    font-weight: 700;
+    font-size: 2.2em;
+
+  }
 
   body {
     display: block;
@@ -392,7 +351,7 @@
     margin: 0px;
     text-align: left;
     font-size: 16px;
-    font-family: 'OpenSans',sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: normal;
     line-height: 1.5;
     tab-size: 3;
@@ -476,7 +435,7 @@
 
   .Služby{
     text-align: center;
-    display: flex;
+    display: grid;
     flex-direction: column;
     margin: 178px 205px;
     gap: 100px;
@@ -490,6 +449,7 @@
   .bum{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 100px 52px;
   }
 
   .my-button{
@@ -507,10 +467,6 @@
     align-items: center;
   }
 
-  .bum{
-    gap: 100px 52px;
-  }
-
   .bums > *{
     margin: 0;
   }
@@ -521,17 +477,9 @@
     align-items: center;
   }
 
-  .sluzby_header{
-
-  }
-
   .text_l{
     display: grid;
     grid-row: 1;
-  }
-
-  .text_p{
-
   }
 
   .reklama{
@@ -543,13 +491,14 @@
     background-color: #3a3a3a;
   }
 
-  h2{
-    font-size: 60px;
-  }
 
   h1{
     font-size: 120px;
     margin: 0;
+  }
+
+  .↑↓{
+        
   }
 
   .hero-title{
@@ -569,10 +518,6 @@
     gap: 80px;
    }
 
-  .ref{
-
-  }
-
   .kontakt{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -586,6 +531,13 @@
     padding: 0;
     margin: 0;
   }
+
+  footer > h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--white);
+}
 
   .spodni-cast{
     color: rgb(255, 255, 255);
@@ -616,7 +568,7 @@
   }
 
   .sluzby-popis{
-    margin: 206px;
+    margin: 12.875em;
   }
 
   .sluzby-popis > h2{
