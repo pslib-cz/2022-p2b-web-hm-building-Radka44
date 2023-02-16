@@ -316,6 +316,19 @@
     font-size: 30px;
   }
 
+  .restyl-h2{
+    text-align: center;
+  }
+
+  .gallery-restyl{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5625em;
+    margin-left: 12.875em;
+    margin-right: 12.875em;
+    margin-bottom: 17.3125em;
+  }
+
   .btn--primary {
     background-color: var(--color-primary);
     padding: 16px 50px;
