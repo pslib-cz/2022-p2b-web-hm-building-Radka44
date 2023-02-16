@@ -48,7 +48,7 @@
   }
 
   img{
-    max-width: 320px;
+    max-width: 20em;
   }
 
   .menu-main{
@@ -77,10 +77,10 @@
     height: 0;
     margin-right: calc(46px - 25px- (46px - 25px / 2));
     transform: translateY(-100%);
-    border: 12.5px solid white;
+    border: 0.7815em solid white;
     border-bottom-color: #eb6c27;
     border-bottom-style: solid;
-    border-bottom-width: 25px;
+    border-bottom-width: 1.56em;
     border-top: none;
   }
 
@@ -91,7 +91,7 @@
     display: flex;
     color: #fff;
     justify-content: end;
-    height: 269px;
+    height: 16.81em;
     flex-direction: column;
     margin: 0px;
   }
@@ -103,8 +103,8 @@
     text-align: center;
     background-color: #00000080;
     margin: 0px;
-    padding: 20px;
-    height: 270px;
+    padding: 1.25em;
+    height: 16.875em;
     display: flex;
     justify-content: end; 
   }
@@ -139,9 +139,9 @@
 
   .btn--primary {
     background-color: #eb6c27;
-    padding: 16px 50px;
-    height: 41px;
-    width: 173px;
+    padding: 1em 3.125em;
+    height: 2.5625em;
+    width: 10.8125em;
     color: #fff;
   }
 
@@ -150,7 +150,7 @@
   }
 
   .reference-hl-str > .btn--primary{
-    margin: 40px;
+    margin: 2.5em;
   }
   
   .btn {
@@ -163,12 +163,12 @@
   }
   
   .Sluzby{
-    margin: 21px;
+    margin: 1.3125em;
     /*width: 320px;*/
   }
 
   .sluzby-popis{
-    padding: 20px;
+    padding: 1.25em;
   }
   
   span{
@@ -176,11 +176,11 @@
   }
 
   .obrazek_p{
-    border-radius: 0 0 50px 0;
+    border-radius: 0 0 3.125em 0;
   }
 
   .obrazek_l{
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 3.125em;
   }
 
   .my-button{
@@ -192,12 +192,12 @@
     gap: 10px;*/
 
     color: var(--color-primary);
-    padding: 12px 40px 12px 40px;
-    font-size: 14px;
-    border-radius: 2px;
+    padding: 0.75em 2.5em 0.75em 2.5em;
+    font-size: 0.875em;
+    border-radius: 0.125em;
     border-style: dashed;
     text-decoration-line: none;
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
   }
   
   a {
@@ -209,7 +209,7 @@
   }
 
   .Novostavby, .prumyslove-stavby, .domy-a-jiné-stavby, .Komunikace-a-zpevněne-plochy, .reklama{
-    margin-top: 40px;
+    margin-top: 2.5em;
   }
 
   .reklama{
@@ -217,16 +217,16 @@
     background-size: 200%;
     background-position: center;
     color: #fff;
-    padding: 20px;
+    padding: 1.25em;
   }
 
   .reference-hl-str{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25em;
+    margin-right: 1.25em
   }
 
   .ref{
-    width: 320px;
+    width: 20em;
     text-align: center;
   }
 
@@ -234,28 +234,27 @@
     background-color: #eb6c27;
     color: #fff;
     text-align: center;
-    height: 283px;
-    width: 360px;
+    height: 17.68em;
+    width: 22.5em;
   }
 
   .bottom-button{
     background-color: #fff;
-    width: 231px;
-    height: 58px;
+    width: 14.43em;
+    height: 3.62em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 50px 20px 50px;
-
+    padding: 1.25em 3.125em 1.25em 3.125em;
   }
 
   .spodni-cast > h2{
-    padding-top: 66px;
+    padding-top: 4.125em;
   }
 
   .spodni-cast > p{
-    padding-top: 26px;
+    padding-top: 1.625em;
   }
 
   .bottom-button > a{
@@ -274,11 +273,342 @@
 
 
 /*TABLET*/
-@media (min-width: 780px) and (max-width:1400px) {
+@media (min-width: 700px) and (max-width:1400px) {
   .navbar__hamburger{
     display: none;
   }
+
+  .page-title{
+    font-weight: 400;
+    font-size: 3.75em;
+  }
+
+  .hero-title{
+    color: white;
+    font-size: 1.875em;
+    font-weight: 150;
+  }
+
+  h2{
+    font-weight: 350;
+    font-size: 0.93em;
+  }
+
+  .gallery-h2{
+    text-align: center;
+  }
+
+  .gallery-restyl{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.78125em;
+    margin-left: 6.4375em;
+    margin-right: 6.4375em;
+    margin-bottom: 8,65625em;
+  }
+
+  .gallery-zbrojnice{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.78125em;
+    margin-left: 6.4375em;
+    margin-right: 6.4375em;
+    margin-bottom: 9.1771875em;
+  }
+
+  .gallery-pradelna{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.78125em;
+    margin-left: 6.4375em;
+    margin-right: 6.4375em;
+    margin-bottom: 7.9584375em;
+  }
+
+  .obrazek-4-pradelna{
+    grid-row: 3;
+  }
+
+  .obrazek-5-pradelna{
+    grid-row: 2/ span 2;
+  }
+
+  .obrazek-16-zbrojnice{
+    grid-row: 5/ span 3;
+  }
+
+  .btn--primary {
+    background-color: var(--color-primary);
+    padding: 0,5em 1.56em;
+    color: aliceblue;
+   }
+  
+  .btn {
+    text-decoration: none;
+    display: inline-flex;
+    margin: 2.28em;
+  }
+
+  .navbar-btn::after{
+    content: url(./arrow.svg);
+    margin-left: 0.5em;
+  }
+  
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }  
+
+  .figma-h2{
+    font-weight: 350;
+    font-size: 1.1em;
+
+  }
+
+  .h2-reference{
+    font-weight: 350;
+    font-size: 0.78125em;
+  }
+
+  body {
+    display: block;
+    color: #3a3a3a;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    font-size: 0.5em;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: normal;
+    line-height: 0.75;
+    tab-size: 1.5;
+  }
+
+  :where(body) {
+  margin: 0;
+  }
+
+  .page-header-box{
+  background-image:linear-gradient(#00000081, #00000081), url(./pageheader-1920w.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  color: #fff;
+  justify-content: end;
+  flex-direction: column;
+  margin: 0px;
+  
+  }
+
+  .menu-main{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:aliceblue;
+  margin: 1.34em 6.4em;
+  }
+
+  .navbar__menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  }
+
+  li:hover a{
+    color: #fff;
+  }
+
+  a{
+    color: black;
+    text-decoration: none;
+  }
+
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  .navbar__menu li:hover{
+    background-color:  #eb6c27;
+  }
+
+  .obrazek_p{
+    border-radius: 0 0 25px 0;
+  }
+
+  .obrazek_l{
+    border-radius: 0 0 0 1.56em;
+  } 
+
+  .navbar__menu li{
+    margin: 0;
+    padding: 1.09em 0.93em;
+    display: flex;
+    text-align: center;
+  }
+
+  .content-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin: 0px;
+    margin-bottom: 4rem;
+    padding: 0.625em;
+    margin-top: 4.56em;
+  }
+
+  .Sluzby{
+    text-align: center;
+    display: grid;
+    flex-direction: column;
+    margin: 5.56em 6.4em;
+    gap: 3.125em;
+  }
+
+  span{
+    color: #eb6c27;
+  }
+
+
+  .novostavby-casti{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.125em 1.625em;
+  }
+
+  .my-button{
+    display: flex;
+    border: 0.125em dashed #eb6c27;
+    text-align: center;
+    padding: 0.375em 1.25em;
+    gap: 0.31em;
+    align-items: center;
+  }
+
+  .novostavby-casti div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bums > *{
+    margin: 0;
+  }
+
+  .bums{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text_l{
+    display: grid;
+    grid-row: 1;
+  }
+
+  .reklama{
+    background-image:linear-gradient(#00000081, #00000081), url(./background-CTAblock-4460w.jpg);
+    background-size: 200%;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 4em 6.375em;
+    background-color: #3a3a3a;
+  }
+
+
+  h1{
+    font-size: 3.75em;
+    margin: 0;
+  }
+
+  .↑↓{
+        
+  }
+
+  .hero-title{
+    font-size: 1.875em;
+    margin: 0;
+  }
+
+  .reference-hl-str{
+    display: block;
+    text-align: center;
+    margin: 5.53em 6.46em;
+  }
+
+  .ref_big{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+   }
+
+  .kontakt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sluzby-popis > h2{
+    text-align: center;
+  }
+
+  .spodni-cast > h2{
+    padding: 0;
+    margin: 0;
+  }
+
+  footer > h1{
+    font-weight: 350;
+    font-size: 0.68em;
+    line-height: 0.93em;
+    color: var(--white);
 }
+
+  .spodni-cast{
+    color: rgb(255, 255, 255);
+    background-color: #eb6c27;
+    text-align: center;
+    display: block;
+  }
+
+  .bottom-button{
+    text-decoration: none;
+    display: inline-flex;
+    background-color: #fff;
+    padding: 0.5em 1.56em;
+    margin-bottom: 1.4em;
+  }
+
+  .ref:hover > p{
+    display: block;
+    background-color:#eb6c27;
+  }
+
+  .ref > h2, .ref > p{
+    display: none;
+    position: absolute;
+  }
+
+  li::marker{
+    color: #eb6c27;
+  }
+
+  .sluzby-popis{
+    margin: 6.4375em;
+  }
+
+  .sluzby-popis > h2{
+    text-align: center;
+  }
+}
+
 
 
 
@@ -301,22 +631,22 @@
   }
 
   .page-title{
-    font-weight: 800;
-    font-size: 120px;
+    font-weight: 400;
+    font-size: 3.5em;
   }
 
   .hero-title{
     color: white;
-    font-size: 60px;
+    font-size: 3.75em;
     font-weight: 300;
   }
 
   h2{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875em;
   }
 
-  .restyl-h2{
+  .gallery-h2{
     text-align: center;
   }
 
@@ -326,19 +656,49 @@
     gap: 1.5625em;
     margin-left: 12.875em;
     margin-right: 12.875em;
-    margin-bottom: 17.3125em;
+    margin-bottom: 8,65625em;
+  }
+
+  .gallery-zbrojnice{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5625em;
+    margin-left: 12.875em;
+    margin-right: 12.875em;
+    margin-bottom: 18.354375em;
+  }
+
+  .gallery-pradelna{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5625em;
+    margin-left: 12.875em;
+    margin-right: 12.875em;
+    margin-bottom: 15.916875em;
+  }
+
+  .obrazek-4-pradelna{
+    grid-row: 3;
+  }
+
+  .obrazek-5-pradelna{
+    grid-row: 2/ span 2;
+  }
+
+  .obrazek-16-zbrojnice{
+    grid-row: 5/ span 3;
   }
 
   .btn--primary {
     background-color: var(--color-primary);
-    padding: 16px 50px;
+    padding: 1em 3.125em;
     color: aliceblue;
    }
   
   .btn {
     text-decoration: none;
     display: inline-flex;
-    margin: 73px;
+    margin: 4.56em;
   }
 
   .navbar-btn::after{
@@ -368,7 +728,7 @@
     padding: 0px;
     margin: 0px;
     text-align: left;
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'OpenSans', sans-serif;
     font-weight: normal;
     line-height: 1.5;
@@ -397,7 +757,7 @@
   justify-content: space-between;
   align-items: center;
   background-color:aliceblue;
-  margin: 43px 205px;
+  margin: 2.68em 12.81em;
   }
 
   .navbar__menu{
@@ -406,9 +766,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  margin: 0;
+  }
+
+  li:hover a{
+    color: #fff;
   }
 
   a{
+    color: black;
     text-decoration: none;
   }
 
@@ -435,7 +801,7 @@
 
   .navbar__menu li{
     margin: 0;
-    padding: 35px 30px;
+    padding: 2.18em 1.875em;
     display: flex;
     text-align: center;
   }
@@ -447,16 +813,16 @@
     text-align: center; 
     margin: 0px;
     margin-bottom: 8rem;
-    padding: 20px;
-    margin-top: 146px;
+    padding: 1.25em;
+    margin-top: 9.125em;
   }
 
-  .Služby{
+  .Sluzby{
     text-align: center;
     display: grid;
     flex-direction: column;
-    margin: 178px 205px;
-    gap: 100px;
+    margin: 11.125em 12.81em;
+    gap: 6.25em;
   }
 
   span{
@@ -464,22 +830,22 @@
   }
 
 
-  .bum{
+  .novostavby-casti{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px 52px;
+    gap: 6.25em 2.35em;
   }
 
   .my-button{
     display: flex;
-    border: 2px dashed #eb6c27;
+    border: 0.125em dashed #eb6c27;
     text-align: center;
-    padding: 12px 40px;
-    gap: 10px;
+    padding: 0.75em 2.5em;
+    gap: 0.625em;
     align-items: center;
   }
 
-  .bum div{
+  .novostavby-casti div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -505,13 +871,13 @@
     background-size: 200%;
     background-position: center;
     color: rgb(255, 255, 255);
-    padding: 128px 204px;
+    padding: 8em 12.75em;
     background-color: #3a3a3a;
   }
 
 
   h1{
-    font-size: 120px;
+    font-size: 7.5em;
     margin: 0;
   }
 
@@ -520,20 +886,20 @@
   }
 
   .hero-title{
-    font-size: 60px;
+    font-size: 3.75em;
     margin: 0;
   }
 
   .reference-hl-str{
     display: block;
     text-align: center;
-    margin: 177px 207px;
+    margin: 11.06em 12.93em;
   }
 
   .ref_big{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    gap: 5em;
    }
 
   .kontakt{
@@ -552,8 +918,8 @@
 
   footer > h1{
     font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 1.375em;
+    line-height: 1.875em;
     color: var(--white);
 }
 
@@ -568,7 +934,8 @@
     text-decoration: none;
     display: inline-flex;
     background-color: #fff;
-    padding: 16px 50px;
+    padding: 1em 3.125em;
+    margin-bottom: 2.81em;
   }
 
   .ref:hover > p{
@@ -592,19 +959,4 @@
   .sluzby-popis > h2{
     text-align: center;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
